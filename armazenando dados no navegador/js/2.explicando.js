@@ -1,4 +1,5 @@
 const form = document.querySelector('#novoItem')
+const lista = document.getElementById('lista') // todas as vezes que executa a função cria essa constante lista novamente, e ela não precisa estar na function, então ela fica declarada como uma variavel comum ao nosso codigo inteiro e só ser chamada no finalzinho na hora de adicionar o lista.appendChild(novoItem)
 
 form.addEventListener('submit', (evento) => {  
     evento.preventDefault() 
@@ -19,7 +20,6 @@ form.addEventListener('submit', (evento) => {
         novoItem.appendChild(numeroItem)
         novoItem.innerHTML += nome
 
-        const lista = document.getElementById('lista')
 
         lista.appendChild(novoItem) 
 
