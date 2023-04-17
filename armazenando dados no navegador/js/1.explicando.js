@@ -40,14 +40,14 @@ form.addEventListener('submit', (evento) => {  // quando acontecer o evento subm
 
         // retorna um objeto no console, pois o elemento é criado em JS, e cria um objeto inteiro
         // ao invés do innerHTML, é usado o appendChild()
-        // que vai inserior um elemento criado dentro do outro
+        // que vai inserir um elemento criado dentro do outro
 
         novoItem.appendChild(numeroItem)
         console.log(novoItem) // agora retorna <strong>10</strong> ao invés de objeto
 
 
         // é preciso icrementar um novo item, e agora sim, o innerHTML
-        // já que ele já recebeu o objeto, é preciso acrescentar o nome
+        // já que ele já recebeu o objeto elemento como tag, é preciso acrescentar o nome comum(sem tag)
 
         novoItem.innerHTML += nome
 
